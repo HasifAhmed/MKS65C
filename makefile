@@ -1,5 +1,5 @@
-all:sieve.o tester.o
-	gcc sieve.o tester.o -lm
+all:sieve.o main.o
+	gcc sieve.o main.o -lm
 
 run:
 	./a.out $(args)
@@ -7,8 +7,8 @@ run:
 sieve.o: sieve.c sieve.h
 	gcc -c sieve.c
 
-tester.o: tester.c sieve.h
-	gcc -c tester.c
+main.o: main.c sieve.h
+	gcc -c main.c
 
 clean:
 	rm *.o
