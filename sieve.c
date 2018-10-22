@@ -11,7 +11,7 @@ int sieve(int targetPrime){
     else{
       range = targetPrime * log(targetPrime) * 1.3 + 10;
     }
-    int * arr = calloc(sizeof(int),range);
+    char * arr = calloc(sizeof(char),range);
 
 
 
